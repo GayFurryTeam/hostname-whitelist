@@ -102,6 +102,6 @@ To use the Discord logging feature:
 3. Paste it into the `discord-webhook` field in `config.yml`.
 4. Enable `log-allowed-connections` or `log-denied-connections` as desired.
 
-## License
+# License
 
-This project is licensed under the MIT License.
+This project is licensed under the Mozilla Public License 2.0
