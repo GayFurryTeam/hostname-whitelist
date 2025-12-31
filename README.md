@@ -4,6 +4,24 @@ A simple yet powerful Velocity proxy plugin that restricts server access to
 specific hostnames or IP addresses. This is useful for preventing direct IP
 connections or enforcing the use of specific domains (e.g., `play.example.com`).
 
+## Why is this important?
+
+Malicious actors can create their own BungeeCord or Velocity proxy and forward
+players to your server without their knowledge. This allows them to perform a
+**Man-in-the-Middle (MitM) attack**, enabling them to:
+
+- Log all commands (including `/login` and `/register` passwords on non-premium
+  servers).
+- Hijack player sessions (playing as the user).
+- Execute commands on behalf of the victim.
+
+By enforcing a hostname whitelist, you ensure that players can ONLY connect via
+your official domain (e.g., `uwu.org.ua`), effectively blocking these malicious
+redirects.
+
+Similar security systems are used by major servers like **DonutSMP**, **2b2t**,
+and **Hypixel** to protect their players.
+
 ## Features
 
 - **Hostname Whitelisting**: Only allow connections from specified domains or
